@@ -34,7 +34,7 @@
 
   <script>
     // The value below is injected by flutter build, do not touch.
-    const serviceWorkerVersion = "1694838479";
+    const serviceWorkerVersion = "1376465863";
   </script>
   <!-- This script adds the flutter initialization JS code -->
   <script src="flutter.js" defer></script>
@@ -54,6 +54,27 @@
         }
       });
     });
+  </script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+  <script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "firebase/app";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+  apiKey: "AIzaSyANPs80ubLP6SJsBn6C-uwwCg9xVGcSu-w",
+  authDomain: "rah-crm.firebaseapp.com",
+  projectId: "rah-crm",
+  storageBucket: "rah-crm.appspot.com",
+  messagingSenderId: "217301772788",
+  appId: "1:217301772788:web:6696d7aea48ee1e93531a1"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
   </script>
 </body>
 </html>
